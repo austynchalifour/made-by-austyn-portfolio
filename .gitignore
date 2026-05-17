@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Local database logs
+messages.json
+
+# Zip / Archive uploads
+*.zip
+*.rar
+*.tar.gz
+
+# IDE / System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

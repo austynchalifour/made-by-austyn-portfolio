@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MadeByAustyn | Full-Stack & Desktop Software Engineer</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="MadeByAustyn | Full-Stack & Desktop Software Engineer">
+  <meta name="description" content="Portfolio of Austyn, a high-caliber Full-Stack Developer and Desktop Application Architect specialized in Node.js, Electron, and Premium UI/UX Engineering.">
+  <meta name="author" content="Austyn">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MadeByAustyn | Full-Stack & Desktop Software Engineer">
+  <meta property="og:description" content="Discover premium web applications, desktop office systems, overlay pet simulations, and interactive platforms custom-engineered by Austyn.">
+  <meta property="og:image" content="/assets/logo.webp">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Custom Glowing Cursor Effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Background Animated Cyber Grid -->
+  <div class="cyber-grid"></div>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Header Navigation -->
+  <header class="glass-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" id="logoLink">
+        <img src="assets/logo.webp" alt="MadeByAustyn Logo" class="nav-logo-img">
+        <span class="logo-text">MadeBy<span class="highlight">Austyn</span></span>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#hire" class="nav-link">Hire Me</a>
+        <a href="#contact" class="nav-link nav-cta">Get In Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="availability-badge scroll-reveal">
+          <span class="pulse-dot"></span> Available for Premium Projects
+        </div>
+        <h1 class="hero-title scroll-reveal">
+          Crafting Elite<br>
+          <span class="gradient-text">Software Experiences</span>
+        </h1>
+        <h2 class="hero-subtitle scroll-reveal">
+          I am a <span class="typewriter-text" id="typewriter"></span><span class="typewriter-cursor">|</span>
+        </h2>
+        <p class="hero-description scroll-reveal">
+          Welcome to my digital workshop. I specialize in building next-generation web platforms, custom desktop shells (Electron), interactive simulations, and sleek, fluid user interfaces. Let's engineer something memorable.
+        </p>
+        <div class="hero-ctas scroll-reveal">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-project-diagram"></i> Explore Projects</a>
+          <a href="#hire" class="btn btn-secondary"><i class="fas fa-file-invoice-dollar"></i> Calculate Cost</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual scroll-reveal">
+        <div class="logo-stage">
+          <div class="rotating-ring ring-outer"></div>
+          <div class="rotating-ring ring-inner"></div>
+          <div class="logo-glowing-backdrop"></div>
+          <img src="assets/logo.webp" alt="MadeByAustyn Logo" class="hero-logo-img">
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <span class="mouse-icon">
+        <span class="wheel"></span>
+      </span>
+      <span class="scroll-arrow"></span>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subtitle">Architecting Solutions</span>
+        <h2 class="section-title">The Mind Behind The Code</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-panel scroll-reveal">
+          <h3 class="card-subtitle"><i class="fas fa-user-ninja"></i> My Story</h3>
+          <p class="about-text">
+            Hey! I'm Austyn. I'm a developer obsessed with details, visuals, and high performance. I bridges the gap between complex system logic and premium visual aesthetics.
+          </p>
+          <p class="about-text">
+            Whether it's wiring custom Electron shells for full-featured IDEs, programming desktop pets that dynamically interact with active user workspaces, or creating pixel-perfect modular drag-and-drop web builder platforms, my goal is always absolute visual and logical perfection.
+          </p>
+          <div class="personal-metrics">
+            <div class="metric">
+              <span class="metric-num">5+</span>
+              <span class="metric-label">Years Coding</span>
+            </div>
+            <div class="metric">
+              <span class="metric-num">30+</span>
+              <span class="metric-label">Projects Completed</span>
+            </div>
+            <div class="metric">
+              <span class="metric-num">100%</span>
+              <span class="metric-label">Client Approval</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card timeline-card glass-panel scroll-reveal">
+          <h3 class="card-subtitle"><i class="fas fa-history"></i> Milestones & Milestones</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2026 - Present</div>
+              <h4 class="timeline-title">Freelance App Architect & Consultant</h4>
+              <p class="timeline-desc">Designing and deploying bespoke systems, desktop overlays, and funnel builder tools for clients worldwide.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2024 - 2025</div>
+              <h4 class="timeline-title">Lead Desktop Systems Developer</h4>
+              <p class="timeline-desc">Engineered electron-based clones of classic software suites and interactive desktop productivity utilities.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2022 - 2024</div>
+              <h4 class="timeline-title">Full Stack Engineer</h4>
+              <p class="timeline-desc">Built enterprise-level APIs, automated scraper systems, and reactive dashboards utilizing modern JS stacks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Showroom Section -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header flex-header">
+        <div>
+          <span class="subtitle">My Portfolio</span>
+          <h2 class="section-title">The Showroom</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="project-filters glass-panel" id="projectFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web apps">Web Apps</button>
+          <button class="filter-btn" data-filter="desktop apps">Desktop Apps</button>
+        </div>
+      </div>
+
+      <!-- Loaded dynamically via API -->
+      <div class="projects-grid" id="projectsContainer">
+        <!-- Loader Skeleton -->
+        <div class="project-skeleton glass-panel"></div>
+        <div class="project-skeleton glass-panel"></div>
+        <div class="project-skeleton glass-panel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix Section -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subtitle">Stack & Capability</span>
+        <h2 class="section-title">The Skills Matrix</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="skills-layout">
+        <!-- Sidebar Category Selectors -->
+        <div class="skills-categories glass-panel scroll-reveal">
+          <button class="skill-category-btn active" data-category="all">
+            <i class="fas fa-layer-group"></i> All Expertise
+          </button>
+          <button class="skill-category-btn" data-category="frontend">
+            <i class="fab fa-html5"></i> Frontend UI/UX
+          </button>
+          <button class="skill-category-btn" data-category="backend">
+            <i class="fab fa-node-js"></i> Backend & Desktop
+          </button>
+          <button class="skill-category-btn" data-category="tools">
+            <i class="fas fa-tools"></i> Workflow & Tools
+          </button>
+        </div>
+
+        <!-- Skills Progress Cards (Loaded dynamically via API) -->
+        <div class="skills-grid" id="skillsContainer">
+          <!-- Loading placeholder -->
+          <div class="skill-loader">Fetching expertise data...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Hiring Estimator Section -->
+  <section class="hire-section" id="hire">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subtitle">Work With Me</span>
+        <h2 class="section-title">Dynamic Hire Estimator</h2>
+        <div class="divider"></div>
+        <p class="section-desc">
+          Plan your timeline and project specifications below to calculate an instant, transparent quote generated by our secure pricing backend.
+        </p>
+      </div>
+
+      <div class="estimator-layout glass-panel scroll-reveal">
+        <!-- Configuration Board -->
+        <div class="estimator-form">
+          <h3 class="form-title"><i class="fas fa-sliders-h"></i> Configure Specifications</h3>
+          
+          <!-- Timeline Slider -->
+          <div class="form-group">
+            <label for="weeksSlider" class="slider-label">
+              <span>Project Duration (Timeline)</span>
+              <span class="slider-value" id="weeksValue">4 Weeks</span>
+            </label>
+            <input type="range" id="weeksSlider" min="1" max="16" value="4" class="range-slider">
+            <div class="slider-ticks">
+              <span>1 Wk</span>
+              <span>4 Wks (10% off)</span>
+              <span>8 Wks (15% off)</span>
+              <span>16 Wks</span>
+            </div>
+          </div>
+
+          <!-- Complexity Selection -->
+          <div class="form-group">
+            <label class="input-label">Architecture Tier</label>
+            <div class="complexity-options">
+              <label class="complexity-card active">
+                <input type="radio" name="complexity" value="standard" checked>
+                <div class="card-inner">
+                  <i class="fas fa-feather-alt"></i>
+                  <span class="comp-title">Standard</span>
+                  <span class="comp-desc">Single landing page or lightweight static web app. Basic integrations.</span>
+                </div>
+              </label>
+
+              <label class="complexity-card">
+                <input type="radio" name="complexity" value="premium">
+                <div class="card-inner">
+                  <i class="fas fa-crown"></i>
+                  <span class="comp-title">Premium</span>
+                  <span class="comp-desc">Multi-page platform, interactive state dashboard, custom styles.</span>
+                </div>
+              </label>
+
+              <label class="complexity-card">
+                <input type="radio" name="complexity" value="enterprise">
+                <div class="card-inner">
+                  <i class="fas fa-shield-alt"></i>
+                  <span class="comp-title">Enterprise</span>
+                  <span class="comp-desc">Complex desktop app shells, low-level system overlays, custom database stacks.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Feature Add-ons -->
+          <div class="form-group">
+            <label class="input-label">Core Integration Add-ons</label>
+            <div class="features-grid">
+              <label class="feature-item">
+                <input type="checkbox" name="feature" value="auth" class="feature-checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="feature-name">Secure Auth (SSO, JWT)</span>
+              </label>
+              
+              <label class="feature-item">
+                <input type="checkbox" name="feature" value="payments" class="feature-checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="feature-name">Stripe Payments / Subscriptions</span>
+              </label>
+              
+              <label class="feature-item">
+                <input type="checkbox" name="feature" value="cms" class="feature-checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="feature-name">Custom CMS & Markdown Blog</span>
+              </label>
+              
+              <label class="feature-item">
+                <input type="checkbox" name="feature" value="chat" class="feature-checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="feature-name">Real-time WebSockets / Chat</span>
+              </label>
+
+              <label class="feature-item">
+                <input type="checkbox" name="feature" value="seo" class="feature-checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="feature-name">Premium SEO & Core Web Vitals</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Receipt Dashboard -->
+        <div class="estimator-receipt">
+          <div class="receipt-glow-overlay"></div>
+          <h3 class="receipt-title"><i class="fas fa-file-invoice-dollar"></i> Live Quote Receipt</h3>
+          <div class="receipt-divider"></div>
+          
+          <ul class="receipt-items" id="receiptItems">
+            <li><span>Base Dev Rate ($1,500/wk)</span><strong id="receiptBase">$6,000</strong></li>
+            <li><span>Architecture Mult.</span><strong id="receiptMult">1.0x</strong></li>
+            <li><span>Integrations Total</span><strong id="receiptFeatures">$0</strong></li>
+            <li class="receipt-subtotal-row"><span>Subtotal</span><strong id="receiptSubtotal">$6,000</strong></li>
+            <li class="receipt-discount-row text-success"><span>Volume Discount</span><strong id="receiptDiscount">-$600 (10%)</strong></li>
+          </ul>
+
+          <div class="receipt-total">
+            <span class="total-label">Estimated Price</span>
+            <span class="total-amount" id="receiptTotal">$5,400</span>
+          </div>
+
+          <div class="receipt-meta">
+            <span><i class="far fa-clock"></i> Est. Delivery: <strong id="receiptTimeline">4 Weeks</strong></span>
+            <span><i class="fas fa-undo-alt"></i> Unlimited Revisions included</span>
+          </div>
+
+          <a href="#contact" class="btn btn-primary btn-block" id="quoteCTA"><i class="fas fa-paper-plane"></i> Request Quote Deployment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subtitle">Communication Channel</span>
+        <h2 class="section-title">Establish Connection</h2>
+        <div class="divider"></div>
+        <p class="section-desc">
+          Drop me a message! Whether you want to discuss a full-time position, a freelance contract, or just talk tech, my line is always open.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Contact Cards / Social Links -->
+        <div class="contact-info scroll-reveal">
+          <div class="info-card glass-panel">
+            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+            <div class="info-details">
+              <h4>Direct Email</h4>
+              <a href="mailto:austyn@madebyaustyn.com" class="info-link">austyn@madebyaustyn.com</a>
+            </div>
+          </div>
+
+          <div class="info-card glass-panel">
+            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info-details">
+              <h4>Location Base</h4>
+              <p class="info-link">United States (EST / Available Worldwide)</p>
+            </div>
+          </div>
+
+          <div class="info-card glass-panel">
+            <div class="icon-box"><i class="fas fa-clock"></i></div>
+            <div class="info-details">
+              <h4>Response Window</h4>
+              <p class="info-link">Less than 24 Hours (Guaranteed)</p>
+            </div>
+          </div>
+
+          <!-- Social Handles -->
+          <div class="social-links-container glass-panel">
+            <h4>Sync Profiles</h4>
+            <div class="social-row">
+              <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" class="social-btn" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-container glass-panel scroll-reveal">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field-group">
+                <input type="text" id="contactName" required placeholder=" " class="form-input">
+                <label for="contactName" class="floating-label">Your Name *</label>
+                <span class="validation-message" id="nameError"></span>
+              </div>
+              
+              <div class="form-field-group">
+                <input type="email" id="contactEmail" required placeholder=" " class="form-input">
+                <label for="contactEmail" class="floating-label">Your Email *</label>
+                <span class="validation-message" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field-group">
+                <input type="text" id="contactCompany" placeholder=" " class="form-input">
+                <label for="contactCompany" class="floating-label">Company (Optional)</label>
+              </div>
+              
+              <div class="form-field-group">
+                <input type="text" id="contactSubject" placeholder=" " class="form-input">
+                <label for="contactSubject" class="floating-label">Subject</label>
+              </div>
+            </div>
+
+            <div class="form-field-group textarea-group">
+              <textarea id="contactMessage" required placeholder=" " class="form-input" rows="6"></textarea>
+              <label for="contactMessage" class="floating-label">Your Message / Project Brief *</label>
+              <span class="validation-message" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+              <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Secure Message</span>
+              <span class="spinner" id="formSpinner"></span>
+            </button>
+          </form>
+
+          <!-- Form Message Responses -->
+          <div class="form-status-alert glass-panel" id="formStatusAlert">
+            <i class="fas fa-check-circle success-icon" id="statusAlertIcon"></i>
+            <p id="statusAlertText">Message delivered!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <img src="assets/logo.webp" alt="MadeByAustyn Logo" class="footer-logo-img">
+          <span>MadeBy<span class="highlight">Austyn</span></span>
+        </a>
+        <p>Premium system engineering & fluid responsive visuals.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-link-group">
+          <h4>Navigation</h4>
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+        </div>
+        <div class="footer-link-group">
+          <h4>Ventures</h4>
+          <a href="#hire">Hire Me</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 MadeByAustyn. All rights engineered. Designed with pure CSS.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="index.js"></script>
+</body>
+</html>
