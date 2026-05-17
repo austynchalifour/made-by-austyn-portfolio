@@ -631,12 +631,20 @@ function initContactForm() {
     spinner.style.display = 'inline-block';
     
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('https://admin.madebyaustyn.com/capture.php', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'X-API-Key': 'e9652b8d191ecd164ff10b6a61c69ef8'
         },
-        body: JSON.stringify({ name, email, company, subject, message })
+        body: JSON.stringify({
+          name,
+          email,
+          company: company || 'None',
+          subject: subject || 'General Inquiry',
+          message,
+          _formname: 'Portfolio Contact Form'
+        })
       });
       
       const json = await res.json();
@@ -645,7 +653,7 @@ function initContactForm() {
         // Success display
         alertIcon.className = "fas fa-check-circle success-icon";
         alertIcon.style.color = "var(--color-success)";
-        alertText.textContent = json.message;
+        alertText.textContent = `Thank you, ${name}! Your message has been captured successfully. Austyn will get in touch with you at ${email} within 24 hours.`;
         alertContainer.classList.add('active');
 
         // Reset forms
@@ -663,7 +671,7 @@ function initContactForm() {
         // Failed response
         alertIcon.className = "fas fa-exclamation-triangle success-icon";
         alertIcon.style.color = "var(--color-danger)";
-        alertText.textContent = json.message || "An unexpected error occurred.";
+        alertText.textContent = json.error || "An unexpected error occurred.";
         alertContainer.classList.add('active');
         
         setTimeout(() => {
@@ -674,7 +682,7 @@ function initContactForm() {
       console.error("AJAX form submission error:", error);
       alertIcon.className = "fas fa-exclamation-triangle success-icon";
       alertIcon.style.color = "var(--color-danger)";
-      alertText.textContent = "Failed to sync connection with Express server. Please check your local connection.";
+      alertText.textContent = "Failed to sync connection with Form Capture API. Please check your network connection.";
       alertContainer.classList.add('active');
       
       setTimeout(() => {

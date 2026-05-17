@@ -1824,17 +1824,19 @@
       
       // Submit actual JSON data to Express Backend
       try {
-        const response = await fetch('/api/oto-order', {
+        const response = await fetch('https://admin.madebyaustyn.com/capture.php', {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'X-API-Key': 'e9652b8d191ecd164ff10b6a61c69ef8'
           },
           body: JSON.stringify({
             name: clientName,
             email: clientEmail,
             projectType: projectType === 'Website' ? 'Bespoke Brand Website' : 'Mini One-Feature Software',
             brief: brief,
-            paymentMethod: 'Simulated Card checkout'
+            paymentMethod: 'Simulated Card checkout',
+            _formname: 'OTO Order Form'
           })
         });
         
@@ -1860,7 +1862,7 @@
           }, 1000);
           
         } else {
-          throw new Error(json.message || "Endpoint returned failed status.");
+          throw new Error(json.error || "Endpoint returned failed status.");
         }
       } catch (err) {
         console.error("OTO Order Failure:", err);
