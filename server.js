@@ -235,6 +235,83 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
+// 4b. One-Time Offer ($100 OTO) Order Endpoint (Persisting to messages.json)
+app.post('/api/oto-order', async (req, res) => {
+  const { name, email, projectType, brief, paymentMethod = 'Simulated Card' } = req.body;
+  
+  // Validation
+  if (!name || !email || !projectType || !brief) {
+    return res.status(400).json({
+      success: false,
+      message: "Required fields are missing. Please complete Name, Email, Project Type, and Project Brief."
+    });
+  }
+  
+  // Basic Email Regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return res.status(400).json({
+      success: false,
+      message: "Please provide a valid email address."
+    });
+  }
+  
+  const fullMessageBody = `======================================
+⭐ ONE-TIME OFFER ($100 ORDER) ⭐
+======================================
+Project Tier: $100 Custom Website/Mini-Software
+Requested Category: ${projectType}
+Simulated Checkout Method: ${paymentMethod}
+Transaction Status: SUCCESSFUL ($100 Flat Rate Locked)
+
+--- CLIENT PROJECT BRIEF ---
+${brief.trim()}
+======================================`;
+
+  const newMessage = {
+    id: Date.now(),
+    timestamp: new Date().toISOString(),
+    name: name.trim(),
+    email: email.trim(),
+    company: "⭐ $100 OTO Order",
+    subject: `★ OTO Order: ${projectType}`,
+    message: fullMessageBody
+  };
+  
+  const filePath = path.join(__dirname, 'messages.json');
+  
+  try {
+    let existingMessages = [];
+    
+    // Try to read existing messages
+    try {
+      const data = await fs.readFile(filePath, 'utf8');
+      existingMessages = JSON.parse(data);
+      if (!Array.isArray(existingMessages)) {
+        existingMessages = [];
+      }
+    } catch (readError) {
+      existingMessages = [];
+    }
+    
+    existingMessages.push(newMessage);
+    
+    // Save back to messages.json with pretty-printing
+    await fs.writeFile(filePath, JSON.stringify(existingMessages, null, 2), 'utf8');
+    
+    res.status(200).json({
+      success: true,
+      message: `Order processed successfully! Thank you, ${name}. Your $100 flat-rate slot has been secured. Austyn will email you at ${email} to kick off development within 12 hours!`
+    });
+  } catch (error) {
+    console.error("Failed to write OTO order:", error);
+    res.status(500).json({
+      success: false,
+      message: "A server error occurred while locking your offer. Please try again."
+    });
+  }
+});
+
 // --- ADMIN DASHBOARD APIs & ROUTES ---
 
 // Admin password config (defaults to 'admin' but can be overridden via environment variables)
@@ -293,6 +370,16 @@ app.delete('/api/messages/:id', requireAuth, async (req, res) => {
   } catch (error) {
     res.status(500).json({ success: false, message: "Failed to delete message." });
   }
+});
+
+// Serve OTO offer page
+app.get('/offer', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'offer.html'));
+});
+
+// Serve OTO route redirect
+app.get('/oto', (req, res) => {
+  res.redirect('/offer');
 });
 
 // Serve dashboard.html directly

@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXCLUSIVE OTO | Secure Bespoke Software or Website for $100 | MadeByAustyn</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="EXCLUSIVE OTO | Secure Bespoke Software or Website for $100">
+  <meta name="description" content="One-time promotional accelerator offer: Secure a premium single-feature custom software or complete responsive website for a flat $100. 100% hand-crafted, unlimited revisions, zero recurring fees.">
+  <meta name="author" content="Austyn">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Link Core Design System Styles -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="assets/logo.webp">
+
+  <style>
+    /* ==========================================================================
+       OTO CUSTOM STYLING (AESTHETIC UPGRADES)
+       ========================================================================== */
+    body {
+      padding-top: 105px; /* Offset for banner + header */
+    }
+
+    /* Flashing Urgency Alert Banner */
+    .urgency-bar {
+      background: linear-gradient(90deg, #500000 0%, #b30000 50%, #500000 100%);
+      color: #ffffff;
+      font-family: var(--font-heading);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 10px 24px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1002;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4);
+      border-bottom: 1px solid rgba(255, 0, 0, 0.25);
+    }
+    
+    .recording-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #ff3b30;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 10px #ff3b30;
+      animation: blink 1.2s infinite ease-in-out;
+    }
+    
+    @keyframes blink {
+      0%, 100% { opacity: 0.3; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.1); }
+    }
+
+    .glass-header {
+      top: 45px; /* Shift nav below urgency bar */
+    }
+    
+    .glass-header.scrolled {
+      top: 0;
+    }
+
+    /* OTO Hero Layout Extensions */
+    .oto-hero {
+      padding: 60px 0;
+      z-index: 2;
+    }
+    
+    .oto-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
+    
+    .oto-heading {
+      font-family: var(--font-heading);
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+      background: var(--grad-text);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .badge-oto {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 30px;
+      background: rgba(255, 0, 0, 0.1);
+      border: 1px solid rgba(255, 0, 0, 0.25);
+      color: #ff4d4d;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
+    }
+    
+    .checklist-oto {
+      list-style: none;
+      margin: 28px 0 36px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    
+    .checklist-oto li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+    
+    .checklist-oto li i {
+      color: var(--color-primary);
+      font-size: 16px;
+      text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    }
+
+    /* Ticket / Countdown Stage */
+    .ticket-panel {
+      padding: 40px;
+      border-radius: 24px;
+      border-color: var(--border-glass-glow);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 0, 0, 0.05);
+    }
+    
+    .ticket-panel::before {
+      content: '';
+      position: absolute;
+      width: 150%;
+      height: 10%;
+      background: linear-gradient(90deg, transparent, rgba(255, 0, 0, 0.1), transparent);
+      top: -5%;
+      left: -25%;
+      transform: rotate(-15deg);
+      animation: ticketScan 8s infinite linear;
+    }
+    
+    @keyframes ticketScan {
+      0% { top: -20%; }
+      50% { top: 120%; }
+      100% { top: -20%; }
+    }
+    
+    .ticket-header {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+    }
+
+    /* Circle Countdown Graphic */
+    .timer-ring-container {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .timer-svg {
+      transform: rotate(-90deg);
+      width: 100%;
+      height: 100%;
+    }
+    
+    .timer-circle-bg {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.03);
+      stroke-width: 8;
+    }
+    
+    .timer-circle-progress {
+      fill: none;
+      stroke: var(--color-primary);
+      stroke-width: 8;
+      stroke-linecap: round;
+      stroke-dasharray: 502; /* 2 * PI * r (r=80) = 502.6 */
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset 1s linear;
+      filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.7));
+    }
+    
+    .timer-text-display {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .timer-digits {
+      font-family: var(--font-heading);
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.1;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    
+    .timer-lbl {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-primary);
+      font-weight: 700;
+      margin-top: 2px;
+      text-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+    }
+    
+    .price-tag-oto {
+      margin-bottom: 20px;
+    }
+    
+    .price-original {
+      font-size: 18px;
+      color: var(--text-dark);
+      text-decoration: line-through;
+      margin-right: 12px;
+      font-weight: 500;
+    }
+    
+    .price-active {
+      font-family: var(--font-heading);
+      font-size: 56px;
+      font-weight: 800;
+      color: #ffffff;
+      text-shadow: 0 0 25px rgba(255, 0, 0, 0.35);
+      position: relative;
+    }
+    
+    .price-currency {
+      font-size: 28px;
+      vertical-align: super;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+
+    .slots-indicator {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-glass);
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin-top: 10px;
+    }
+    
+    .slots-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    
+    .slots-bar {
+      height: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .slots-fill {
+      height: 100%;
+      width: 60%; /* Represents 3/5 slots claimed */
+      background: var(--grad-primary);
+      border-radius: 4px;
+      box-shadow: var(--shadow-neon-primary);
+      transition: width 1s ease-out;
+    }
+
+    /* Packages Display Grid */
+    .packages-section {
+      padding: 80px 0;
+      position: relative;
+    }
+    
+    .packs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .pack-card {
+      padding: 40px;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    .pack-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, transparent 50%, rgba(255, 0, 0, 0.08) 50%);
+      transition: var(--transition);
+    }
+    
+    .pack-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-glass-glow);
+      box-shadow: 0 20px 45px -10px rgba(255, 0, 0, 0.1);
+    }
+    
+    .pack-card.selected {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.15), var(--shadow-neon-primary);
+      background: rgba(15, 22, 40, 0.85);
+    }
+    
+    .pack-card.selected::before {
+      background: linear-gradient(135deg, transparent 50%, var(--color-primary) 50%);
+    }
+    
+    .pack-select-indicator {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid var(--border-glass);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      color: transparent;
+      transition: var(--transition-fast);
+      z-index: 3;
+    }
+    
+    .pack-card.selected .pack-select-indicator {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: var(--bg-darker);
+    }
+    
+    .pack-icon-box {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      background: rgba(255, 0, 0, 0.05);
+      border: 1px solid rgba(255, 0, 0, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: var(--color-primary);
+      margin-bottom: 28px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+    
+    .pack-card:hover .pack-icon-box {
+      transform: scale(1.05) rotate(5deg);
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-neon-primary);
+    }
+    
+    .pack-title {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-main);
+    }
+    
+    .pack-original-val {
+      font-size: 13px;
+      color: var(--text-dark);
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .pack-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    
+    .pack-specs-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: auto;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-glass);
+    }
+    
+    .pack-specs-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    
+    .pack-specs-list li i {
+      color: var(--color-success);
+    }
+
+    /* Booking Form Layout overrides */
+    .order-section {
+      padding: 80px 0;
+    }
+    
+    .order-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .order-card {
+      padding: 48px;
+    }
+    
+    .order-card-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .order-card-header h3 {
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 800;
+      background: var(--grad-text);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    
+    .order-card-header p {
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    
+    .form-field-group {
+      position: relative;
+      margin-bottom: 24px;
+    }
+    
+    .form-field-group.full-width {
+      grid-column: 1 / span 2;
+    }
+    
+    .form-input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-glass);
+      border-radius: 10px;
+      padding: 16px 20px;
+      font-size: 15px;
+      color: var(--text-main);
+      outline: none;
+      transition: var(--transition-fast);
+      font-family: var(--font-body);
+    }
+    
+    .form-input:focus, .form-input:not(:placeholder-shown) {
+      border-color: var(--border-glass-glow);
+    }
+    
+    .form-input:focus {
+      box-shadow: 0 0 15px -3px rgba(255, 0, 0, 0.15);
+    }
+    
+    .form-select {
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 20px center;
+      background-size: 16px;
+      padding-right: 48px;
+    }
+    
+    .floating-label {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 15px;
+      pointer-events: none;
+      transition: var(--transition-fast);
+      background: transparent;
+    }
+    
+    .form-input:focus + .floating-label,
+    .form-input:not(:placeholder-shown) + .floating-label {
+      top: 0;
+      transform: translateY(-50%) scale(0.85);
+      background: #0b101f;
+      padding: 0 8px;
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+    
+    .form-input.is-invalid {
+      border-color: var(--color-danger);
+    }
+    
+    .form-input.is-valid {
+      border-color: var(--color-success);
+    }
+    
+    .validation-message {
+      font-size: 11px;
+      color: var(--color-danger);
+      position: absolute;
+      bottom: -18px;
+      left: 4px;
+      font-weight: 500;
+    }
+
+    /* FAQ glass lists */
+    .faq-section {
+      padding: 80px 0;
+    }
+    
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .faq-panel {
+      padding: 30px;
+    }
+    
+    .faq-q {
+      font-family: var(--font-heading);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      display: flex;
+      gap: 12px;
+    }
+    
+    .faq-q i {
+      color: var(--color-primary);
+      margin-top: 4px;
+    }
+    
+    .faq-a {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      padding-left: 26px;
+    }
+
+    /* Trust indicators badge row */
+    .trust-badges-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border-glass);
+    }
+    
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    
+    .trust-badge i {
+      font-size: 18px;
+      color: var(--color-primary);
+      text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+
+    /* ==========================================================================
+       CYBERPUNK PAYMENT MODAL & SIMULATOR
+       ========================================================================== */
+    .payment-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(3, 5, 10, 0.9);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+    }
+    
+    .payment-overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+    
+    .payment-modal {
+      width: 100%;
+      max-width: 600px;
+      padding: 40px;
+      border-color: var(--border-glass-glow);
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    
+    .modal-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      color: var(--text-dark);
+      font-size: 20px;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      z-index: 10;
+    }
+    
+    .modal-close-btn:hover {
+      color: var(--color-danger);
+    }
+    
+    .payment-modal-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .payment-modal-header h3 {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .payment-modal-header h3 i {
+      color: var(--color-primary);
+    }
+    
+    .payment-modal-header p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    /* Credit Card Graphic Simulator */
+    .credit-card-stage {
+      perspective: 1000px;
+      width: 100%;
+      max-width: 380px;
+      height: 220px;
+      margin: 0 auto 30px auto;
+    }
+    
+    .card-graphic {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border-radius: 16px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), var(--shadow-neon-primary);
+    }
+    
+    .credit-card-stage.flipped .card-graphic {
+      transform: rotateY(180deg);
+    }
+    
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(20, 24, 38, 0.95) 0%, rgba(10, 12, 20, 0.98) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    
+    .card-face::after {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 0, 0, 0.06) 0%, transparent 70%);
+      top: -30px;
+      right: -30px;
+    }
+    
+    .card-face-back {
+      transform: rotateY(180deg);
+      padding: 24px 0; /* Stripe spans full width */
+    }
+    
+    .card-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .card-chip {
+      width: 44px;
+      height: 34px;
+      background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%);
+      border-radius: 6px;
+      position: relative;
+      box-shadow: inset 0 1px 3px rgba(255,255,255,0.3);
+    }
+    
+    .card-chip::after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: 4px;
+    }
+    
+    .card-brand {
+      font-family: var(--font-heading);
+      font-size: 16px;
+      font-weight: 800;
+      color: rgba(255,255,255,0.8);
+      font-style: italic;
+      letter-spacing: 0.5px;
+    }
+    
+    .card-brand span {
+      color: var(--color-primary);
+    }
+    
+    .card-number-display {
+      font-family: 'Fira Code', monospace;
+      font-size: 18px;
+      letter-spacing: 2px;
+      color: #ffffff;
+      text-align: center;
+      margin: 20px 0;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    .card-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    
+    .card-holder-block {
+      display: flex;
+      flex-direction: column;
+      max-width: 70%;
+    }
+    
+    .card-lbl {
+      font-size: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-dark);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    
+    .card-val {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+    }
+    
+    .card-expiry-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    
+    .card-black-stripe {
+      width: 100%;
+      height: 45px;
+      background: #000;
+      margin-top: 10px;
+    }
+    
+    .card-signature-stripe {
+      margin: 15px 24px 0 24px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 4px;
+      height: 35px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 12px;
+      border: 1px solid var(--border-glass);
+    }
+    
+    .card-cvv-display {
+      font-family: 'Fira Code', monospace;
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+      background: #fff;
+      padding: 2px 6px;
+      border-radius: 3px;
+      letter-spacing: 1px;
+    }
+
+    /* CC Inputs inside Modal */
+    .modal-form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .modal-form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    
+    .cc-icon-input {
+      position: relative;
+    }
+    
+    .cc-icon-input i {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dark);
+    }
+
+    /* Encrypted Terminal Processing Slate */
+    .terminal-stage {
+      background: #020408;
+      border: 1px solid rgba(255, 0, 0, 0.2);
+      border-radius: 12px;
+      padding: 24px;
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      color: #00ff00;
+      min-height: 200px;
+      display: none;
+      flex-direction: column;
+      gap: 8px;
+      box-shadow: inset 0 0 20px rgba(0, 255, 0, 0.05), var(--shadow-neon-primary);
+    }
+    
+    .terminal-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0;
+      transform: translateY(5px);
+      transition: all 0.3s ease;
+    }
+    
+    .terminal-line.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .terminal-line .status-ok {
+      color: #00ff00;
+      font-weight: bold;
+    }
+    
+    .terminal-line .status-load {
+      color: var(--color-primary);
+      animation: spin 1s infinite linear;
+    }
+
+    /* Checkout Success Slate */
+    .success-stage {
+      text-align: center;
+      padding: 40px 20px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .success-badge {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.1);
+      border: 2px solid var(--color-success);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      color: var(--color-success);
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+      margin-bottom: 28px;
+      animation: popSuccess 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    @keyframes popSuccess {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    
+    .success-title {
+      font-family: var(--font-heading);
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    
+    .success-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 440px;
+      margin-bottom: 30px;
+    }
+
+    /* Page Locked Success display */
+    .page-locked-success-panel {
+      padding: 50px;
+      text-align: center;
+      max-width: 700px;
+      margin: 40px auto;
+    }
+
+    @media (max-width: 991px) {
+      .oto-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+      .packages-section {
+        padding: 50px 0;
+      }
+      .packs-grid {
+        grid-template-columns: 1fr;
+      }
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        padding-top: 120px;
+      }
+      .urgency-bar {
+        font-size: 10px;
+        padding: 8px 16px;
+      }
+      .oto-heading {
+        font-size: 38px;
+      }
+      .ticket-panel {
+        padding: 30px 20px;
+      }
+      .order-card {
+        padding: 30px 20px;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .form-field-group.full-width {
+        grid-column: unset;
+      }
+      .credit-card-stage {
+        height: 190px;
+      }
+      .card-number-display {
+        font-size: 15px;
+        margin: 12px 0;
+      }
+      .trust-badges-row {
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Custom Flashing Urgency Alert Banner -->
+  <div class="urgency-bar">
+    <span class="recording-dot"></span> EXCLUSIVE DEVELOMENT DEAL: Bespoke Landing Page or Software For $100 Flat Rate
+  </div>
+
+  <!-- Custom Glowing Cursor Effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Background Animated Cyber Grid -->
+  <div class="cyber-grid"></div>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Header Navigation -->
+  <header class="glass-header">
+    <div class="nav-container">
+      <a href="/" class="brand-logo">
+        <img src="assets/logo.webp" alt="MadeByAustyn Logo" class="nav-logo-img">
+        <span class="logo-text">MadeBy<span class="highlight">Austyn</span></span>
+      </a>
+      
+      <nav class="nav-links">
+        <a href="/" class="nav-link">Main Portfolio</a>
+        <a href="#packages" class="nav-link">Compare Options</a>
+        <a href="#order" class="nav-link nav-cta">Lock $100 Deal <i class="fas fa-lock"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       OTO HERO ACCELERATOR
+       ========================================================================== -->
+  <section class="oto-hero">
+    <div class="container">
+      <div class="oto-layout">
+        
+        <!-- Explanatory Content -->
+        <div class="hero-text-block">
+          <div class="badge-oto">
+            <i class="fas fa-bolt"></i> One-Time Special Promo Offer
+          </div>
+          <h1 class="oto-heading">
+            Secure A Bespoke Website<br>
+            Or Mini-Software For <span class="gradient-text">$100 Flat</span>
+          </h1>
+          <p class="section-desc" style="margin: 0; font-size: 17px; max-width: 100%;">
+            Launch your portfolio, capture your target audience, or automate your tedious work routine. For the next 15 minutes, you can bypass the standard $1,500/week base development rates and lock in a single, high-impact asset custom-crafted by Austyn for just a hundred dollar bill.
+          </p>
+          
+          <ul class="checklist-oto">
+            <li><i class="fas fa-circle-check"></i> <strong>Zero Monthly Software Subscriptions</strong> — You own the raw code outright.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>High-Performance Engineering</strong> — Hand-crafted in Vanilla HTML/CSS/JS (no bloated templates).</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Turnaround In 3-5 Days</strong> — Clean, fully functional release built at lightspeed.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Unlimited Initial Revisions</strong> — We fine-tune it until it matches your exact vision.</li>
+          </ul>
+          
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="#packages" class="btn btn-primary"><i class="fas fa-wand-magic-sparkles"></i> Compare Package Options</a>
+            <a href="#order" class="btn btn-secondary"><i class="fas fa-arrow-down"></i> Scroll To Brief Form</a>
+          </div>
+        </div>
+        
+        <!-- Urgency Lock Ticket -->
+        <div class="hero-ticket-block">
+          <div class="ticket-panel glass-panel">
+            <div class="ticket-header">Personal Session Active</div>
+            
+            <!-- Radial Countdown -->
+            <div class="timer-ring-container">
+              <svg class="timer-svg">
+                <circle class="timer-circle-bg" cx="90" cy="90" r="80"></circle>
+                <circle class="timer-circle-progress" id="timerProgress" cx="90" cy="90" r="80"></circle>
+              </svg>
+              <div class="timer-text-display">
+                <span class="timer-digits" id="timerClock">15:00</span>
+                <span class="timer-lbl">Time Remaining</span>
+              </div>
+            </div>
+            
+            <!-- Flat Rate price tag -->
+            <div class="price-tag-oto">
+              <span class="price-original">$1,500</span>
+              <span class="price-active"><span class="price-currency">$</span>100</span>
+            </div>
+            
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; font-weight: 500;">
+              *Locking your slot reserves 100% direct developer bandwidth.
+            </p>
+            
+            <!-- Claimed status bar -->
+            <div class="slots-indicator">
+              <div class="slots-label">
+                <span>Slots Secured Today</span>
+                <strong style="color: var(--color-primary);">3 of 5 Claimed</strong>
+              </div>
+              <div class="slots-bar">
+                <div class="slots-fill" id="slotsFillBar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PACKAGE TIER COMPARISON
+       ========================================================================== -->
+  <section class="packages-section" id="packages">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="subtitle">Choose Your Asset Stature</span>
+        <h2 class="section-title">The $100 Package Options</h2>
+        <div class="divider"></div>
+        <p class="section-desc">
+          Click on one of the premium formats below to pre-select your order package and automatically synchronize the project specification brief terminal.
+        </p>
+      </div>
+      
+      <div class="packs-grid">
+        
+        <!-- Option 1: Landing Page -->
+        <div class="pack-card glass-panel" id="packWebsite" onclick="selectPackage('Website')">
+          <div class="pack-select-indicator"><i class="fas fa-check"></i></div>
+          <div class="pack-icon-box">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="pack-title">Bespoke Launch Website</h3>
+          <div class="pack-original-val">Value Estimate: $1,500+</div>
+          <p class="pack-desc">
+            A premium, ultra-fast landing page or single-page brand site custom-coded using semantic HTML5, Vanilla CSS transitions, and fluid grid layouts. Optimized fully for Google Core Web Vitals and conversions.
+          </p>
+          
+          <ul class="pack-specs-list">
+            <li><i class="fas fa-check-double"></i> 100% Fully Responsive Layout (Desktop/Mobile)</li>
+            <li><i class="fas fa-check-double"></i> Customized Lead Capture Forms & API Sync</li>
+            <li><i class="fas fa-check-double"></i> Speed Optimization (100/100 Lighthouse Target)</li>
+            <li><i class="fas fa-check-double"></i> Micro-Animations & Dynamic Hover Aesthetics</li>
+            <li><i class="fas fa-check-double"></i> Full SEO Schema Meta Tag Configurations</li>
+          </ul>
+        </div>
+        
+        <!-- Option 2: Software / Mini App -->
+        <div class="pack-card glass-panel" id="packSoftware" onclick="selectPackage('Software')">
+          <div class="pack-select-indicator"><i class="fas fa-check"></i></div>
+          <div class="pack-icon-box">
+            <i class="fas fa-cubes"></i>
+          </div>
+          <h3 class="pack-title">Mini One-Feature Software</h3>
+          <div class="pack-original-val">Value Estimate: $2,500+</div>
+          <p class="pack-desc">
+            A fully functional mini-utility, standalone web application, browser extension, or background script designed to solve exactly ONE key operational problem or automate a major workflow bottleneck.
+          </p>
+          
+          <ul class="pack-specs-list">
+            <li><i class="fas fa-check-double"></i> Web App, Chrome Extension, or CLI Scraper</li>
+            <li><i class="fas fa-check-double"></i> Single-Purpose Core Functional Logic</li>
+            <li><i class="fas fa-check-double"></i> Elegant & Streamlined Mini User-Dashboard</li>
+            <li><i class="fas fa-check-double"></i> API Integrations (Stripe, Slack, Discord, etc.)</li>
+            <li><i class="fas fa-check-double"></i> Clean, Documented & Commented Raw Codebases</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SPECIFICATION TERMINAL FORM
+       ========================================================================== -->
+  <section class="order-section" id="order">
+    <div class="container">
+      
+      <!-- Primary order block -->
+      <div class="order-grid" id="primaryOrderGrid">
+        <div class="order-card glass-panel">
+          
+          <div class="order-card-header">
+            <h3>Lock In Your Flat Price Slot</h3>
+            <p>Complete the blueprints below to establish development channels directly with Austyn.</p>
+          </div>
+          
+          <form id="otoOrderForm" novalidate onsubmit="event.preventDefault(); triggerPaymentModal(event); return false;">
+            
+            <div class="form-row">
+              <div class="form-field-group">
+                <input type="text" id="orderName" required placeholder=" " class="form-input">
+                <label for="orderName" class="floating-label">Your Full Name *</label>
+                <span class="validation-message" id="orderNameError"></span>
+              </div>
+              
+              <div class="form-field-group">
+                <input type="email" id="orderEmail" required placeholder=" " class="form-input">
+                <label for="orderEmail" class="floating-label">Your Email Address *</label>
+                <span class="validation-message" id="orderEmailError"></span>
+              </div>
+            </div>
+            
+            <div class="form-field-group full-width">
+              <select id="orderProjectType" required class="form-input form-select" onchange="syncSelectedPackageFromDropdown()">
+                <option value="" disabled selected>Select Your Project Type Blueprint</option>
+                <option value="Website">Bespoke Launch Website / Landing Page ($100)</option>
+                <option value="Software">Mini One-Feature Software Tool ($100)</option>
+              </select>
+              <span class="validation-message" id="orderTypeError"></span>
+            </div>
+            
+            <div class="form-field-group full-width" style="margin-bottom: 30px;">
+              <textarea id="orderBrief" required placeholder=" " class="form-input" rows="6" style="resize: none;"></textarea>
+              <label for="orderBrief" class="floating-label">Explain your website/software idea & features in detail *</label>
+              <span class="validation-message" id="orderBriefError"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block" style="font-size: 16px; padding: 16px 28px;">
+              <i class="fas fa-shield-halved"></i> Lock $100 Flat-Rate Deal & Proceed
+            </button>
+            
+          </form>
+          
+          <!-- Trust Badges -->
+          <div class="trust-badges-row">
+            <div class="trust-badge"><i class="fas fa-shield-check"></i> Encrypted Session</div>
+            <div class="trust-badge"><i class="fas fa-award"></i> 100% Satisfaction</div>
+            <div class="trust-badge"><i class="fas fa-code"></i> Direct Developer Access</div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- LOCKED SUCCESS PAGE BLOCK (Shows up only after successful order submission) -->
+      <div class="glass-panel page-locked-success-panel" id="lockedSuccessPanel" style="display: none;">
+        <div style="width: 70px; height: 70px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); border: 2px solid var(--color-success); display: flex; align-items: center; justify-content: center; font-size: 32px; color: var(--color-success); margin: 0 auto 24px auto; box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);">
+          <i class="fas fa-check"></i>
+        </div>
+        <h3 style="font-family: var(--font-heading); font-size: 30px; font-weight: 800; margin-bottom: 12px;">$100 Flat Rate Locked!</h3>
+        <p style="color: var(--text-muted); font-size: 16px; line-height: 1.6; margin-bottom: 30px;">
+          Congratulations! Your slot has been successfully recorded in the admin dashboard under ID <strong style="color: #fff;" id="successOrderIdDisplay">#0000</strong>. Austyn has been automatically notified and is currently analyzing your technical brief.
+        </p>
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 12px; padding: 20px 30px; text-align: left; margin-bottom: 30px;">
+          <h4 style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; text-transform: uppercase; color: var(--color-primary); letter-spacing: 1px; margin-bottom: 12px;">What Happens Next?</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: var(--text-muted);">
+            <li><i class="fas fa-envelope-open-text" style="color: var(--color-primary); margin-right: 10px;"></i> Check your email (<strong style="color: #fff;" id="successEmailDisplay"></strong>) for an official project onboarding thread.</li>
+            <li><i class="fas fa-calendar-days" style="color: var(--color-primary); margin-right: 10px;"></i> Austyn will contact you inside 12 hours to arrange code assets and schedule layouts.</li>
+            <li><i class="fas fa-laptop-code" style="color: var(--color-primary); margin-right: 10px;"></i> Development triggers immediately. Delivery estimated inside 3-5 business days!</li>
+          </ul>
+        </div>
+        <a href="/" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Return To Main Portfolio</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FREQUENTLY ASKED QUESTIONS
+       ========================================================================== -->
+  <section class="faq-section">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="subtitle">Understand Core Parameters</span>
+        <h2 class="section-title">Blueprints & FAQ</h2>
+        <div class="divider"></div>
+      </div>
+      
+      <div class="faq-grid">
+        
+        <!-- Q1 -->
+        <div class="faq-panel glass-panel">
+          <h4 class="faq-q"><i class="fas fa-circle-question"></i> What fits in a $100 custom website?</h4>
+          <p class="faq-a">
+            This promo covers a premium, high-converting single-page landing site (e.g. captures leads, showcases an app, registers events, or hosts a portfolio resume). It includes standard API form mappings, clean layouts, and responsiveness. Massive multi-page networks require additional pricing structures.
+          </p>
+        </div>
+        
+        <!-- Q2 -->
+        <div class="faq-panel glass-panel">
+          <h4 class="faq-q"><i class="fas fa-circle-question"></i> What fits in a $100 mini-software?</h4>
+          <p class="faq-a">
+            A single-purpose operational script or tool. Examples include a browser extension (like custom floating players), a CLI scraping script, an automated social notification bot, or a lightweight dashboard utility. It solves one problem perfectly.
+          </p>
+        </div>
+        
+        <!-- Q3 -->
+        <div class="faq-panel glass-panel">
+          <h4 class="faq-q"><i class="fas fa-circle-question"></i> Are there any recurring monthly charges?</h4>
+          <p class="faq-a">
+            Absolutely not. Once the project delivers, the code belongs entirely to you. You are free to host it wherever you like (we can help deploy to free platforms like Netlify, Vercel, or GitHub Pages so you pay $0/mo!).
+          </p>
+        </div>
+        
+        <!-- Q4 -->
+        <div class="faq-panel glass-panel">
+          <h4 class="faq-q"><i class="fas fa-circle-question"></i> What if I'm not happy with the software?</h4>
+          <p class="faq-a">
+            We operate with unlimited initial revisions. We will modify the layout, test the functions, and re-engineer components until you are 100% happy with how the asset performs.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CYBERPUNK SECURE PAYMENT MODAL OVERLAY
+       ========================================================================== -->
+  <div class="payment-overlay" id="paymentOverlay">
+    <div class="payment-modal glass-panel">
+      <button class="modal-close-btn" onclick="closePaymentOverlay()"><i class="fas fa-xmark"></i></button>
+      
+      <!-- Initial Payment Screen -->
+      <div id="paymentStageInitial">
+        <div class="payment-modal-header">
+          <h3><i class="fas fa-shield-halved"></i> SECURE DECRYPTED TERMINAL</h3>
+          <p>Locked promotional flat rate: $100.00 USD. Enter card coordinates to secure developer bandwidth.</p>
+        </div>
+        
+        <!-- Simulated Credit Card -->
+        <div class="credit-card-stage" id="creditCardStage">
+          <div class="card-graphic">
+            
+            <!-- Card Front -->
+            <div class="card-face">
+              <div class="card-top-row">
+                <div class="card-chip"></div>
+                <div class="card-brand">MadeBy<span>Austyn</span></div>
+              </div>
+              <div class="card-number-display" id="ccDisplayNumber">•••• •••• •••• ••••</div>
+              <div class="card-meta-row">
+                <div class="card-holder-block">
+                  <span class="card-lbl">Cardholder Name</span>
+                  <span class="card-val" id="ccDisplayName">Your Full Name</span>
+                </div>
+                <div class="card-expiry-block">
+                  <span class="card-lbl">Expires</span>
+                  <span class="card-val" id="ccDisplayExpiry">MM/YY</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card Back -->
+            <div class="card-face card-face-back">
+              <div class="card-black-stripe"></div>
+              <div class="card-signature-stripe">
+                <div class="card-cvv-display" id="ccDisplayCVV">•••</div>
+              </div>
+              <div style="text-align: right; padding: 10px 24px 0 0; font-family: var(--font-heading); font-size: 8px; color: var(--text-dark); font-weight: 700; letter-spacing: 0.5px;">SECURE CYBERPUNK INTEGRATION SYSTEM</div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Credit Card Fields -->
+        <form class="modal-form" id="ccForm" onsubmit="event.preventDefault(); processSimulatedTransaction(); return false;">
+          
+          <div class="form-field-group">
+            <input type="text" id="ccName" required placeholder=" " class="form-input" onfocus="flipCard(false)" oninput="syncCCFields()">
+            <label for="ccName" class="floating-label">Cardholder Name</label>
+          </div>
+          
+          <div class="form-field-group cc-icon-input">
+            <input type="text" id="ccNumber" required maxlength="19" placeholder=" " class="form-input" onfocus="flipCard(false)" oninput="syncCCFields()">
+            <label for="ccNumber" class="floating-label">16-Digit Card Number</label>
+            <i class="far fa-credit-card"></i>
+          </div>
+          
+          <div class="modal-form-row">
+            <div class="form-field-group">
+              <input type="text" id="ccExpiry" required maxlength="5" placeholder=" " class="form-input" onfocus="flipCard(false)" oninput="syncCCFields()">
+              <label for="ccExpiry" class="floating-label">Expiration (MM/YY)</label>
+            </div>
+            
+            <div class="form-field-group">
+              <input type="text" id="ccCVV" required maxlength="3" placeholder=" " class="form-input" onfocus="flipCard(true)" oninput="syncCCFields()">
+              <label for="ccCVV" class="floating-label">CVV / CVN</label>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="font-size: 15px; padding: 14px 20px; font-weight: 700;">
+            <i class="fas fa-lock"></i> Authorize Flat-Rate Transaction ($100.00)
+          </button>
+          
+          <p style="font-size: 11px; text-align: center; color: var(--text-dark); margin-top: 15px; font-weight: 600;">
+            <i class="fas fa-shield-halved" style="margin-right: 4px;"></i> 256-bit Secure simulated transaction node. No actual funds will be transferred.
+          </p>
+          
+        </form>
+      </div>
+      
+      <!-- Encrypted Loading Terminal Display -->
+      <div id="paymentStageTerminal" class="terminal-stage">
+        <div style="border-bottom: 1px solid rgba(0, 255, 0, 0.2); padding-bottom: 8px; margin-bottom: 12px; display: flex; justify-content: space-between; font-size: 11px;">
+          <span>SECURE SHELL CONNECTION DEPLOYED</span>
+          <span style="color: var(--color-primary); font-weight: bold;">[TRANSACTING]</span>
+        </div>
+        <div class="terminal-line" id="termLine1"><i class="fas fa-terminal"></i> Initializing handshake authorization... <span class="status-ok">ESTABLISHED</span></div>
+        <div class="terminal-line" id="termLine2"><i class="fas fa-terminal"></i> Verifying available developer slot... <span class="status-ok">SLOT SECURED</span></div>
+        <div class="terminal-line" id="termLine3"><i class="fas fa-terminal"></i> Connecting to payment ledger simulation... <span class="status-ok">CONNECTED</span></div>
+        <div class="terminal-line" id="termLine4"><i class="fas fa-terminal"></i> Authorizing $100 flat-rate transaction... <span class="status-ok">SUCCESS</span></div>
+        <div class="terminal-line" id="termLine5"><i class="fas fa-terminal"></i> Decoding client project specifications blueprint... <span class="status-ok">DECODED</span></div>
+        <div class="terminal-line" id="termLine6"><i class="fas fa-terminal"></i> Registering OTO client parameters into admin index... <span class="status-load"><i class="fas fa-spinner"></i></span></div>
+      </div>
+      
+      <!-- Checkout Success Slate -->
+      <div id="paymentStageSuccess" class="success-stage">
+        <div class="success-badge"><i class="fas fa-check"></i></div>
+        <h3 class="success-title">Order SECURED</h3>
+        <p class="success-desc" id="successDetailsText">
+          Secure simulated connection resolved! Thank you, Client. Your $100.00 promotional developer slot has been locked successfully.
+        </p>
+        <button class="btn btn-primary" onclick="closeSuccessStage()" style="max-width: 280px;">
+          <i class="fas fa-house-laptop"></i> View Blueprint Confirmation
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="/" class="brand-logo">
+          <img src="assets/logo.webp" alt="MadeByAustyn Logo" class="footer-logo-img">
+          <span>MadeBy<span class="highlight">Austyn</span></span>
+        </a>
+        <p>Premium system engineering & fluid responsive visuals.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-link-group">
+          <h4>Navigation</h4>
+          <a href="/">Main Home</a>
+          <a href="#packages">Compare Options</a>
+          <a href="#order">Lock Deal Form</a>
+        </div>
+        <div class="footer-link-group">
+          <h4>Ventures</h4>
+          <a href="/dashboard"><i class="fa-solid fa-key" style="margin-right: 4px;"></i>Admin Decrypt Panel</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 MadeByAustyn. All rights engineered. One-Time Offer Landing Page.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       OTO INTERACTION SCRIPTS
+       ========================================================================== -->
+  <script>
+    // Global Elements
+    const cursorGlow = document.getElementById('cursorGlow');
+    
+    // Initializer
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Hover listener for cursor glow scaling
+      window.addEventListener('mousemove', (e) => {
+        cursorGlow.style.left = `${e.clientX}px`;
+        cursorGlow.style.top = `${e.clientY}px`;
+      });
+      
+      const interactives = document.querySelectorAll('a, button, input, select, textarea, .pack-card');
+      interactives.forEach(elem => {
+        elem.addEventListener('mouseenter', () => {
+          cursorGlow.style.width = '550px';
+          cursorGlow.style.height = '550px';
+        });
+        elem.addEventListener('mouseleave', () => {
+          cursorGlow.style.width = '400px';
+          cursorGlow.style.height = '400px';
+        });
+      });
+      
+      // 2. Start OTO Countdown clock
+      initCountdown();
+      
+      // 3. Stagger check inputs formatting
+      setupFormValidation();
+    });
+
+    // Countdown Clock Logic (Persistent Local Storage)
+    function initCountdown() {
+      const clock = document.getElementById('timerClock');
+      const progressRing = document.getElementById('timerProgress');
+      const slotsFill = document.getElementById('slotsFillBar');
+      
+      // Calculate length of 15 min session
+      const TOTAL_SECONDS = 15 * 60; // 900
+      let timeLeft = localStorage.getItem('oto_time_remaining');
+      
+      if (timeLeft === null) {
+        timeLeft = TOTAL_SECONDS;
+        localStorage.setItem('oto_time_remaining', timeLeft);
+      } else {
+        timeLeft = parseInt(timeLeft);
+      }
+      
+      // Update displays
+      updateClockUI(timeLeft, TOTAL_SECONDS);
+      
+      // Stagger interval
+      const timer = setInterval(() => {
+        timeLeft--;
+        if (timeLeft <= 0) {
+          // Reset timer back to 15:00 for the simulated OTO effect or halt
+          timeLeft = TOTAL_SECONDS;
+        }
+        
+        localStorage.setItem('oto_time_remaining', timeLeft);
+        updateClockUI(timeLeft, TOTAL_SECONDS);
+      }, 1000);
+      
+      // Slide fill bar representing slots remaining
+      setTimeout(() => {
+        slotsFill.style.width = '80%'; // Shifts slots claimed up to 4 of 5 for intense urgency!
+      }, 3000);
+    }
+    
+    function updateClockUI(seconds, totalSeconds) {
+      const clock = document.getElementById('timerClock');
+      const progressRing = document.getElementById('timerProgress');
+      
+      if (!clock || !progressRing) return;
+      
+      const mins = Math.floor(seconds / 60);
+      const secs = seconds % 60;
+      
+      clock.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+      
+      // Circle stroke dash offset calculation
+      const dashArray = 502; // 2 * PI * r (r=80)
+      const ratio = seconds / totalSeconds;
+      const offset = dashArray * (1 - ratio);
+      progressRing.style.strokeDashoffset = offset;
+    }
+
+    // Pack Selector states
+    function selectPackage(type) {
+      // Toggle card layouts
+      const packWebsite = document.getElementById('packWebsite');
+      const packSoftware = document.getElementById('packSoftware');
+      const orderTypeSelect = document.getElementById('orderProjectType');
+      
+      if (type === 'Website') {
+        packWebsite.classList.add('selected');
+        packSoftware.classList.remove('selected');
+        orderTypeSelect.value = 'Website';
+      } else if (type === 'Software') {
+        packSoftware.classList.add('selected');
+        packWebsite.classList.remove('selected');
+        orderTypeSelect.value = 'Software';
+      }
+      
+      // Clear validation message
+      document.getElementById('orderTypeError').textContent = "";
+      orderTypeSelect.classList.remove('is-invalid');
+      
+      // Scroll down to input order details
+      document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('orderName').focus();
+    }
+    
+    function syncSelectedPackageFromDropdown() {
+      const type = document.getElementById('orderProjectType').value;
+      const packWebsite = document.getElementById('packWebsite');
+      const packSoftware = document.getElementById('packSoftware');
+      
+      if (type === 'Website') {
+        packWebsite.classList.add('selected');
+        packSoftware.classList.remove('selected');
+      } else if (type === 'Software') {
+        packSoftware.classList.add('selected');
+        packWebsite.classList.remove('selected');
+      }
+    }
+
+    // Client Form Validators
+    function setupFormValidation() {
+      const nameInput = document.getElementById('orderName');
+      const emailInput = document.getElementById('orderEmail');
+      const briefInput = document.getElementById('orderBrief');
+      
+      nameInput.addEventListener('input', validateOrderName);
+      emailInput.addEventListener('input', validateOrderEmail);
+      briefInput.addEventListener('input', validateOrderBrief);
+    }
+    
+    function validateOrderName() {
+      const el = document.getElementById('orderName');
+      const err = document.getElementById('orderNameError');
+      if (el.value.trim().length < 2) {
+        el.classList.add('is-invalid');
+        el.classList.remove('is-valid');
+        err.textContent = "Cardholder/Order Name must be at least 2 characters.";
+        return false;
+      } else {
+        el.classList.remove('is-invalid');
+        el.classList.add('is-valid');
+        err.textContent = "";
+        return true;
+      }
+    }
+    
+    function validateOrderEmail() {
+      const el = document.getElementById('orderEmail');
+      const err = document.getElementById('orderEmailError');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(el.value.trim())) {
+        el.classList.add('is-invalid');
+        el.classList.remove('is-valid');
+        err.textContent = "Please provide a valid email inbox address.";
+        return false;
+      } else {
+        el.classList.remove('is-invalid');
+        el.classList.add('is-valid');
+        err.textContent = "";
+        return true;
+      }
+    }
+    
+    function validateOrderType() {
+      const el = document.getElementById('orderProjectType');
+      const err = document.getElementById('orderTypeError');
+      if (!el.value) {
+        el.classList.add('is-invalid');
+        el.classList.remove('is-valid');
+        err.textContent = "Please choose a project blueprint type.";
+        return false;
+      } else {
+        el.classList.remove('is-invalid');
+        el.classList.add('is-valid');
+        err.textContent = "";
+        return true;
+      }
+    }
+    
+    function validateOrderBrief() {
+      const el = document.getElementById('orderBrief');
+      const err = document.getElementById('orderBriefError');
+      if (el.value.trim().length < 15) {
+        el.classList.add('is-invalid');
+        el.classList.remove('is-valid');
+        err.textContent = "Please detail your specifications in full (min 15 characters).";
+        return false;
+      } else {
+        el.classList.remove('is-invalid');
+        el.classList.add('is-valid');
+        err.textContent = "";
+        return true;
+      }
+    }
+
+    // Modal Actions
+    function triggerPaymentModal(e) {
+      const isName = validateOrderName();
+      const isEmail = validateOrderEmail();
+      const isType = validateOrderType();
+      const isBrief = validateOrderBrief();
+      
+      if (!isName || !isEmail || !isType || !isBrief) return;
+      
+      // Auto-populate cardholder name field on simulated credit card
+      const orderName = document.getElementById('orderName').value;
+      document.getElementById('ccName').value = orderName;
+      document.getElementById('ccDisplayName').textContent = orderName.toUpperCase();
+      
+      // Reset simulated payment screens
+      document.getElementById('paymentStageInitial').style.display = 'block';
+      document.getElementById('paymentStageTerminal').style.display = 'none';
+      document.getElementById('paymentStageSuccess').style.display = 'none';
+      
+      // Clean inputs
+      document.getElementById('ccNumber').value = '';
+      document.getElementById('ccExpiry').value = '';
+      document.getElementById('ccCVV').value = '';
+      document.getElementById('ccDisplayNumber').textContent = '•••• •••• •••• ••••';
+      document.getElementById('ccDisplayExpiry').textContent = 'MM/YY';
+      document.getElementById('ccDisplayCVV').textContent = '•••';
+      
+      // Open overlay modal
+      document.getElementById('paymentOverlay').classList.add('active');
+      document.body.style.overflow = 'hidden'; // Lock scrolling
+    }
+    
+    function closePaymentOverlay() {
+      document.getElementById('paymentOverlay').classList.remove('active');
+      document.body.style.overflow = ''; // Unlock scrolling
+    }
+
+    // CC Interactive Flippers
+    function flipCard(shouldShowBack) {
+      const cardStage = document.getElementById('creditCardStage');
+      if (shouldShowBack) {
+        cardStage.classList.add('flipped');
+      } else {
+        cardStage.classList.remove('flipped');
+      }
+    }
+    
+    function syncCCFields() {
+      // 1. Name Sync
+      const ccName = document.getElementById('ccName').value.trim();
+      document.getElementById('ccDisplayName').textContent = ccName ? ccName.toUpperCase() : 'YOUR FULL NAME';
+      
+      // 2. Card Number Sync & formatting
+      let ccNum = document.getElementById('ccNumber').value.replace(/\D/g, '');
+      // Format with spacing: #### #### #### ####
+      let formattedCC = ccNum.match(/.{1,4}/g)?.join(' ') || '';
+      document.getElementById('ccNumber').value = formattedCC;
+      
+      document.getElementById('ccDisplayNumber').textContent = formattedCC ? formattedCC : '•••• •••• •••• ••••';
+      
+      // 3. Expiry format: MM/YY
+      let ccExp = document.getElementById('ccExpiry').value.replace(/\D/g, '');
+      if (ccExp.length > 2) {
+        ccExp = ccExp.substring(0, 2) + '/' + ccExp.substring(2, 4);
+      }
+      document.getElementById('ccExpiry').value = ccExp;
+      document.getElementById('ccDisplayExpiry').textContent = ccExp ? ccExp : 'MM/YY';
+      
+      // 4. CVV Sync
+      let ccCvv = document.getElementById('ccCVV').value.replace(/\D/g, '');
+      document.getElementById('ccCVV').value = ccCvv;
+      document.getElementById('ccDisplayCVV').textContent = ccCvv ? ccCvv : '•••';
+    }
+
+    // Simulated Checkout Terminal Processing
+    async function processSimulatedTransaction() {
+      // Gather card inputs
+      const ccName = document.getElementById('ccName').value.trim();
+      const ccNum = document.getElementById('ccNumber').value.replace(/\s/g, '');
+      const ccExp = document.getElementById('ccExpiry').value.trim();
+      const ccCvv = document.getElementById('ccCVV').value.trim();
+      
+      if (ccName.length < 2 || ccNum.length < 16 || ccExp.length < 5 || ccCvv.length < 3) {
+        alert("Please complete credit card details to initiate SSL check.");
+        return;
+      }
+      
+      // Decrypt inputs
+      const clientName = document.getElementById('orderName').value;
+      const clientEmail = document.getElementById('orderEmail').value;
+      const projectType = document.getElementById('orderProjectType').value;
+      const brief = document.getElementById('orderBrief').value;
+      
+      // Switch screens to terminal stage
+      document.getElementById('paymentStageInitial').style.display = 'none';
+      document.getElementById('paymentStageTerminal').style.display = 'flex';
+      
+      // Initialize terminal logging sequences
+      await triggerTerminalLog('termLine1', 800);
+      await triggerTerminalLog('termLine2', 600);
+      await triggerTerminalLog('termLine3', 700);
+      await triggerTerminalLog('termLine4', 900);
+      await triggerTerminalLog('termLine5', 700);
+      await triggerTerminalLog('termLine6', 100);
+      
+      // Submit actual JSON data to Express Backend
+      try {
+        const response = await fetch('/api/oto-order', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: clientName,
+            email: clientEmail,
+            projectType: projectType === 'Website' ? 'Bespoke Brand Website' : 'Mini One-Feature Software',
+            brief: brief,
+            paymentMethod: 'Simulated Card checkout'
+          })
+        });
+        
+        const json = await response.json();
+        
+        if (response.ok && json.success) {
+          // Replace loading spinners with checkmarks inside terminal
+          document.getElementById('termLine6').querySelector('.status-load').outerHTML = '<span class="status-ok">RESOLVED</span>';
+          
+          // Hold briefly then display dynamic checkout success card
+          setTimeout(() => {
+            document.getElementById('paymentStageTerminal').style.display = 'none';
+            
+            // Populate success card
+            const formattedProject = projectType === 'Website' ? 'Bespoke Website Blueprint' : 'Mini One-Feature Software Utility';
+            document.getElementById('successDetailsText').innerHTML = `
+              <strong>SIMULATED TRANSACTION SUCCESSFUL ($100 Flat Rate Locked)</strong><br><br>
+              Thank you, <strong>${clientName}</strong>! Your technical order slots have been secured and successfully synchronized to Austyn's direct developer inbox.<br><br>
+              An onboarding email thread has been initialized for <strong>${clientEmail}</strong>. Lock confirmation is secured.
+            `;
+            
+            document.getElementById('paymentStageSuccess').style.display = 'flex';
+          }, 1000);
+          
+        } else {
+          throw new Error(json.message || "Endpoint returned failed status.");
+        }
+      } catch (err) {
+        console.error("OTO Order Failure:", err);
+        alert(`Encrypted ledger synchronizer failed: ${err.message || 'Server timeout'}. Please try again.`);
+        document.getElementById('paymentStageInitial').style.display = 'block';
+        document.getElementById('paymentStageTerminal').style.display = 'none';
+      }
+    }
+    
+    function triggerTerminalLog(id, waitMs) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          document.getElementById(id).classList.add('active');
+          resolve();
+        }, waitMs);
+      });
+    }
+
+    // Final Success Stage Resolution
+    function closeSuccessStage() {
+      // Close modal
+      closePaymentOverlay();
+      
+      const clientName = document.getElementById('orderName').value;
+      const clientEmail = document.getElementById('orderEmail').value;
+      
+      // Generate a simulated confirmation ID
+      const orderId = 'OTO-' + Math.floor(1000 + Math.random() * 9000);
+      
+      // Update confirm DOMs
+      document.getElementById('successOrderIdDisplay').textContent = `#${orderId}`;
+      document.getElementById('successEmailDisplay').textContent = clientEmail;
+      
+      // Transition primary order card into permanent Locked confirmation box
+      document.getElementById('primaryOrderGrid').style.display = 'none';
+      document.getElementById('lockedSuccessPanel').style.display = 'block';
+      
+      // Scroll smoothly down to the receipt panel
+      document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
