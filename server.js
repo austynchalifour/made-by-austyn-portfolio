@@ -235,6 +235,71 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
+// --- ADMIN DASHBOARD APIs & ROUTES ---
+
+// Admin password config (defaults to 'admin' but can be overridden via environment variables)
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin';
+
+// Authentication middleware helper
+const requireAuth = (req, res, next) => {
+  const authHeader = req.headers['authorization'];
+  if (authHeader && authHeader === `Bearer ${ADMIN_PASSWORD}`) {
+    next();
+  } else {
+    res.status(401).json({ success: false, message: "Unauthorized. Invalid admin security key." });
+  }
+};
+
+// 5. Get All Messages (Authenticated)
+app.get('/api/messages', requireAuth, async (req, res) => {
+  const filePath = path.join(__dirname, 'messages.json');
+  try {
+    let messages = [];
+    try {
+      const data = await fs.readFile(filePath, 'utf8');
+      messages = JSON.parse(data);
+    } catch (readError) {
+      messages = [];
+    }
+    // Return messages in reverse chronological order
+    res.json({ success: true, data: [...messages].reverse() });
+  } catch (error) {
+    res.status(500).json({ success: false, message: "Failed to load messages." });
+  }
+});
+
+// 6. Delete Message by ID (Authenticated)
+app.delete('/api/messages/:id', requireAuth, async (req, res) => {
+  const { id } = req.params;
+  const filePath = path.join(__dirname, 'messages.json');
+  try {
+    let messages = [];
+    try {
+      const data = await fs.readFile(filePath, 'utf8');
+      messages = JSON.parse(data);
+    } catch (readError) {
+      return res.status(404).json({ success: false, message: "No messages database found." });
+    }
+    
+    const initialLength = messages.length;
+    messages = messages.filter(msg => msg.id !== parseInt(id));
+    
+    if (messages.length === initialLength) {
+      return res.status(404).json({ success: false, message: "Message not found." });
+    }
+    
+    await fs.writeFile(filePath, JSON.stringify(messages, null, 2), 'utf8');
+    res.json({ success: true, message: "Message deleted successfully." });
+  } catch (error) {
+    res.status(500).json({ success: false, message: "Failed to delete message." });
+  }
+});
+
+// Serve dashboard.html directly
+app.get('/dashboard', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
+});
+
 // Wildcard fallback: Serve index.html for spa/routes
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
