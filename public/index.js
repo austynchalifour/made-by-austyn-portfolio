@@ -253,7 +253,7 @@ function renderProjects(projects) {
         </div>
         <h3 class="project-card-title">${proj.title}</h3>
         <p class="project-card-desc">${proj.description}</p>
-        <a href="${proj.link}" class="project-link">Explore Integration <i class="fas fa-arrow-right"></i></a>
+        <a href="${proj.link}" ${proj.link.startsWith('http') ? 'target="_blank" rel="noopener noreferrer"' : ''} class="project-link">Explore Integration <i class="fas fa-arrow-right"></i></a>
       </div>
     `;
 

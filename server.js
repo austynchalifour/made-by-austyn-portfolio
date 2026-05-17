@@ -66,6 +66,16 @@ const projects = [
     image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=800&auto=format&fit=crop",
     link: "#",
     badge: "Gamified Web"
+  },
+  {
+    id: 6,
+    title: "YouTube PiP: Floating Mini Player",
+    category: "Web Apps",
+    tags: ["Chrome API", "Picture-in-Picture API", "JavaScript", "Manifest V3"],
+    description: "A popular Chrome extension that pops any YouTube video into a floating Picture-in-Picture mini-player. Allows seamless multitasking while browsing other tabs, featuring instant overlays and hotkeys.",
+    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800&auto=format&fit=crop",
+    link: "https://chromewebstore.google.com/detail/jgaejjkeplicnhgacfilfkalpaoebblf?utm_source=item-share-cb",
+    badge: "Chrome Extension"
   }
 ];
 
